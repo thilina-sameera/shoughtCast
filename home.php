@@ -28,7 +28,7 @@
   					<!--recorder goes here-->
   					<div class="row">
   						<?php
-  							include_once 'record.php';
+  							include_once 'recorderjs/index.php';
   						?>
   					</div>
   					
