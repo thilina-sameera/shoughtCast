@@ -1,21 +1,11 @@
 
 
-	<script>
-		var toggle = false;
-	
-		if(toggle == false){
-			<button onclick="startRecording(this); toggle = true;" type="button"  class="btn btn-default">Record</button>
-			<button onclick="stopRecording(this);" type="button"  class="btn btn-default" disabled>Stop</button>			
-		}else{
-			<button onclick="startRecording(this);" type="button"  class="btn btn-default" disabled>Record</button>
-			<button onclick="stopRecording(this); toggle=false;" type="button"  class="btn btn-default">Stop</button>			
-		}		
-		
-	</script>
-	
-	
-	
-	<script>
+
+<button onclick="startRecording(this);" type="button"  class="btn btn-default">Record</button>
+<button onclick="stopRecording(this);" type="button"  class="btn btn-default">Stop</button>			
+
+
+<script>
   function __log(e, data) {
     log.innerHTML += "\n" + e + " " + (data || '');
   }
