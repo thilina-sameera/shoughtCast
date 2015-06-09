@@ -28,7 +28,7 @@
   					<!--recorder goes here-->
   					<div class="row">
   						<?php
-  							include_once 'RecordMp3/index.php';
+  							include_once 'recorderjs/index.php';
   						?>
   					</div>
   					
