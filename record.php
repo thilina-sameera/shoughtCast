@@ -1,5 +1,20 @@
 
-<div id="recorder">
+
+	<script>
+		var toggle = false;
+	
+		if(toggle == false){
+			<button onclick="startRecording(this); toggle = true;" type="button"  class="btn btn-default">Record</button>
+			<button onclick="stopRecording(this);" type="button"  class="btn btn-default" disabled>Stop</button>			
+		}else{
+			<button onclick="startRecording(this);" type="button"  class="btn btn-default" disabled>Record</button>
+			<button onclick="stopRecording(this); toggle=false;" type="button"  class="btn btn-default">Stop</button>			
+		}		
+		
+	</script>
+	
+	
+	
 	<script>
   function __log(e, data) {
     log.innerHTML += "\n" + e + " " + (data || '');
@@ -21,6 +36,8 @@
   }
 
   function startRecording(button) {
+  	
+  	
     recorder && recorder.record();
     button.disabled = true;
     button.nextElementSibling.disabled = false;
@@ -82,4 +99,3 @@
 	
    <script src="recorderjs/js/jquery-1.11.0.min.js"></script>	
   <script src="recorderjs/recorder.js"></script>
-</div>

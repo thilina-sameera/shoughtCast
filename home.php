@@ -27,7 +27,9 @@
   					
   					<!--recorder goes here-->
   					<div class="row">
-  						
+  						<?php
+  							include_once 'record.php';
+  						?>
   					</div>
   					
   					<!--shought goes here-->
