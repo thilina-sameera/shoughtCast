@@ -15,6 +15,7 @@
 	</head>
 	
 	<body>
+		<input type="file" accept="audio/*;capture=microphone">
 		
 		<div class="container-fluid">
   			<div class="row">
